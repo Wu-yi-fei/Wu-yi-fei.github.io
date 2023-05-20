@@ -96,6 +96,21 @@ hr {
   box-shadow: 0 0px 4px rgb(0 0 0 / 32%), 0 0px 10px rgb(0 0 0 / 23%);
 }
 
+.menu-container1 {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  min-width: 300px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-shadow: 0 0px 4px rgb(0 0 244), 0 0px 10px rgb(0 0 244);
+}
+
 .menu {
   position: relative;
   margin: 0 auto;
@@ -315,6 +330,46 @@ hr {
 }
 
 .banner .flex-item {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+.banner1 {
+  position: relative;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  overflow-x: auto;
+  background-color: #007082;
+  display: flex;
+}
+
+.banner1 .banner-table {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  align-self: flex-end;
+}
+
+.banner1 .banner-table a {
+  color: #a3cfff;
+  text-decoration: none;
+}
+
+.banner1 .banner-table a:hover {
+  text-decoration: underline;
+}
+
+.banner1 h2,
+.banner1 h3,
+.banner1 p,
+.banner1 span {
+  color: white;
+}
+
+.banner1 .flex-item {
   max-width: 900px;
   margin: 20px auto;
   padding: 0 30px;
