@@ -1,0 +1,464 @@
+
+<script>
+ art()
+   function art() {
+   var a =""
+   var b=""
+   while (b != "123456") { //改为你自己的密码！
+     a = prompt("请输入密码以获得许可")
+   if(a=="123456")
+   {
+     b=a
+   return 0
+  }
+  if(a !="123456" && a!="")
+ {
+   if(a == null)
+   {
+     window.history.back();
+     location.reload();//强制刷新
+
+     window.location.go(-1); //强制跳转上一界面
+   }
+   else{
+   alert("密码错误！")
+   }
+ }
+ }
+
+   }
+</script>
+
+<!doctype html>
+<html>
+
+<head>
+  <title>学术资源</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-embedding {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner1">
+      <div class="banner-table a flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">BWLab 学术资源整理</h2>
+            <p class="text">
+              寄语：非常感激王博老师，在研究生期间，对我学术论文写作的悉心指导。师弟师妹们，怀着学术热忱，跟着王老师做科研，将会是你们人生中最难忘的一段回忆。师兄我在临别之际给你们整理了如下学术资源，包括我的笔记积累等等，希望对你们有所帮助。祝愿 BWLab 学术的薪火代代相传，青出于蓝而胜于蓝。
+            </p>
+            <span class="text">—— 2019级硕士生 袁然</span><p class="text"></p>
+            <p class="text">
+              寄语：感谢王博老师、然哥的奉献与指导。师弟师妹们，坚不欲锐，成功在久不在速；静不欲沉，修器在磨不在多。
+            </p>
+            <span class="text">—— 2020级硕士生 吴逸飞</span></span><p class="text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-table flex-column">
+        <!--Context-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h3>Table of Content</h3>
+            <ul>
+              <li><a href="#期刊会议汇总">国际TOP期刊 &amp; 计算机顶会汇总</a></li>
+              <li><a href="#科研起步">科研起步阶段</a></li>
+              <li><a href="#images-and-image-button">Images and Image Button</a></li>
+              <li><a href="#text-around-image">Text around Image</a></li>
+              <li><a href="#centered-image-and-table">Centered Image and Table</a></li>
+              <li><a href="#adaptive-image">Adaptive Image</a></li>
+              <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
+              <li><a href="#iframe">Iframe</a></li>
+              <li><a href="#list-of-projects">List of Projects</a></li>
+              <li><a href="#gallery">Gallery (responsive size)</a></li>
+              <li><a href="#masonry">Masonry (responsive size)</a></li>
+              <li><a href="#survey">Survey</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="期刊会议汇总" class="no-top-margin">国际TOP期刊 &amp; 计算机顶会汇总</h2>
+            <hr>
+            <p class="text">
+              注：期刊的影响因子统计日期截至2023年5月
+            </p>
+            <p class="text">
+              · IEEE Trans 系列：
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr class="bg-color-gray">
+                    <th class="text-center">期刊title</th>
+                    <th class="text-center">中科院分区</th>
+                    <th class="text-center">影响因子IF</th>
+                    <th class="text-center">中稿难度</th>
+                    <th class="text-center">Introduction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34&amp;year=1996'>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">24.314👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">AI领域无出其右的的top期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&amp;punumber=6221036&amp;sortType=popular_oldest_first'><span>IEEE Transactions on Cybernetics (TCYB)</span></a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">19.118👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">计算机、自动化控制和AI领域的top期刊</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91'>IEEE Transactions on Fuzzy Systems (TFS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">12.253-</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">模糊理论的top期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9'>IEEE Transactions on Automatic Control (TAC)</a></td>
+                    <td class="text-center">Q2</td>
+                    <td class="text-center">6.549👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">控制领域top期刊，对理论要求较高</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385'>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">14.255👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">审稿周期很长，收留顶会、TPAMI心碎投稿人</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=59'>IEEE Transactions on Power Systems (TPS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">7.326👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                   <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165411'>IEEE Transactions on Smart Grid (TSG)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">10.275👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165391'>IEEE Transactions on Sustainable Energy (TSE)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.31-</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+<p class="text">
+              · Elsevier 系列：
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr class="bg-color-gray">
+                    <th class="text-center">期刊title</th>
+                    <th class="text-center">中科院分区</th>
+                    <th class="text-center">影响因子IF</th>
+                    <th class="text-center">中稿难度</th>
+                    <th class="text-center">Introduction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a target="_blank" href='https://www.sciencedirect.com/journal/progress-in-energy-and-combustion-science'>Progress in Energy and Combustion Science</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">35.339👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">Energy-related Nature</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://www.sciencedirect.com/journal/renewable-and-sustainable-energy-reviews'>Renewable and Sustainable Energy Reviews</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">16.799👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">能源类综述top期刊，在阅读文献时可以重点关注该期刊上的paper</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91'>Energy Conversion and Management</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">11.533👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">新能源高水平期刊，这几年IF上涨很快，对于decision-making与forecast类文章的要求水涨船高。我个人认为与PES已经难度相当，区别在于PES更注重idea的novelty，而ECM更注重workload</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/applied-energy'>Applied Energy</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">11.446👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">新能源高水平期刊，难度较高，但这几年对scenario generation与forecast的投稿比较友好，而且学术品味没有PES那么高:)</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/journal-of-cleaner-production'>Journal of Cleaner Production</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">11.072👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">新能源高水平期刊，作为同为IF10+的期刊，存在质量争议，且更偏向于环境类投稿</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/knowledge-based-systems'>Knowledge-Based Systems</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.139-</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">AI、知识、数据科学等领域高水平期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/sustainable-cities-and-society'>Sustainable Cities and Society</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">10.275👆</td>
+                    <td class="text-center">⭐⭐⭐</td>
+                    <td class="text-center">新能源、城市环境领域的高水平期刊，近几年有optimization与forecast的文章发表，且水平较高</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/renewable-energy'><span>Renewable Energy</span></a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.634👆</td>
+                    <td class="text-center">⭐⭐⭐</td>
+                    <td class="text-center">新能源高水平期刊，预测与决策相关文章录用量很大</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/information-sciences'>Information Sciences</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.233👆</td>
+                    <td class="text-center">⭐⭐⭐</td>
+                    <td class="text-center">信息科学交叉学科，范围宽泛，审稿周期很长（平均10个月）</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/energy'>Energy</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.857👆</td>
+                    <td class="text-center">⭐⭐⭐</td>
+                    <td class="text-center">Baseline</td>
+                  </tr>
+                <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/information-sciences'>Information Sciences</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.233</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                <tr>
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/information-sciences'>Information Sciences</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.233</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/information-sciences'>Information Sciences</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.233</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                <tr>
+                </tbody>
+              </table>
+            </div>          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="科研起步" class="no-top-margin">科研起步阶段</h2>
+            <hr>
+            <p class="text">
+              注：期刊的影响因子统计日期截至2023年5月
+            </p>
+            <p class="text">
+              · IEEE Trans 系列：
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr class="bg-color-gray">
+                    <th class="text-center">期刊title</th>
+                    <th class="text-center">中科院分区</th>
+                    <th class="text-center">影响因子IF</th>
+                    <th class="text-center">中稿难度</th>
+                    <th class="text-center">Introduction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34&amp;year=1996'>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">24.314👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">AI领域无出其右的的top期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&amp;punumber=6221036&amp;sortType=popular_oldest_first'><span>IEEE Transactions on Cybernetics (TCYB)</span></a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">19.118👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">计算机、自动化控制和AI领域的top期刊</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91'>IEEE Transactions on Fuzzy Systems (TFS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">12.253-</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">模糊理论的top期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9'>IEEE Transactions on Automatic Control (TAC)</a></td>
+                    <td class="text-center">Q2</td>
+                    <td class="text-center">6.549👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">控制领域top期刊，对理论要求较高</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385'>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">14.255👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">审稿周期很长，收留顶会、TPAMI心碎投稿人</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=59'>IEEE Transactions on Power Systems (TPS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">7.326👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                   <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165411'>IEEE Transactions on Smart Grid (TSG)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">10.275👆</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165391'>IEEE Transactions on Sustainable Energy (TSE)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.31-</td>
+                    <td class="text-center">⭐⭐⭐⭐</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+<p class="text">
+              · Elsevier 系列：
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr class="bg-color-gray">
+                    <th class="text-center">期刊title</th>
+                    <th class="text-center">中科院分区</th>
+                    <th class="text-center">影响因子IF</th>
+                    <th class="text-center">中稿难度</th>
+                    <th class="text-center">Introduction</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://www.sciencedirect.com/journal/progress-in-energy-and-combustion-science'>Progress in Energy and Combustion Science</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">35.339👆</td>
+                    <td class="text-center">⭐⭐⭐⭐⭐⭐</td>
+                    <td class="text-center">Energy-based Nature</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://www.sciencedirect.com/journal/renewable-energy'><span>Renewable Energy</span></a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.634👆</td>
+                    <td class="text-center">⭐⭐⭐</td>
+                    <td class="text-center">新能源高水平期刊，预测与决策录用量很大</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a target="_blank" href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91'>IEEE Transactions on Fuzzy Systems (TFS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">12.253-</td>
+                    <td class="text-center">※※※※※</td>
+                    <td class="text-center">模糊理论的top期刊</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9'>IEEE Transactions on Automatic Control (TAC)</a></td>
+                    <td class="text-center">Q2</td>
+                    <td class="text-center">6.549👆</td>
+                    <td class="text-center">※※※※※</td>
+                    <td class="text-center">控制领域top期刊，对理论要求较高</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385'>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">14.255👆</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">审稿周期很长，收留顶会、TPAMI心碎投稿人</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=59'>IEEE Transactions on Power Systems (TPS)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">7.326👆</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                   <tr>
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165411'>IEEE Transactions on Smart Grid (TSG)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">10.275👆</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一</td>
+                  </tr>
+                  <tr class="bg-color-light-gray">
+                    <td class="text-center"><a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165391'>IEEE Transactions on Sustainable Energy (TSE)</a></td>
+                    <td class="text-center">Q1</td>
+                    <td class="text-center">8.31-</td>
+                    <td class="text-center">※※※※</td>
+                    <td class="text-center">IEEE PES 三大顶刊之一，审稿速度快</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+
+        </div>
+    </div>
+    <div class="footer-container"></div>
+  </div>
+</body>
+
+</html>
